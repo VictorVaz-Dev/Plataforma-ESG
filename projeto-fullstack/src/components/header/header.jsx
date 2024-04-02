@@ -10,10 +10,10 @@ export default function Header(){
                     <Link to="/Home" label="Home"></Link>
                 </div>
                 <div className="Header-option">
-                    Contatos
+                    <Link to="/Contatos" label="Contatos"></Link>
                 </div>
                 <div className="Header-option">
-                    Bonificações
+                    <Link to="/Bonificacoes" label="Bonificações"></Link>
                 </div>
                 <div className="Header-option">
                     Sair
