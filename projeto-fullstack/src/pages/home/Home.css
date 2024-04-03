@@ -1,0 +1,53 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-fullstack-home{
+    height: 400px;
+    width: 100%;
+    background-image: url("../../assets/home/WEB-Full-Stack-Developer.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.div-principal-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #83B4B8;
+    box-shadow: 1px 1px 1px  silver;
+    border-radius: 25px;
+    width: 80%;
+    padding: 10px;
+}
+
+.conteudo-home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 700px;
+    height: 800px;
+    border-radius: 10px;
+}
+
+.foto-home-um{
+    height: 450px;
+    width: 900px;
+    background-image: url("../../assets/home/foto-home-fullstack.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
