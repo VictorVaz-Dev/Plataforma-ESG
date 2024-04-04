@@ -1,4 +1,4 @@
-import "./Header.css"
+import "./header.css"
 import Link from "../link/Link"
 
 export default function Header(){
