@@ -1,0 +1,56 @@
+.divContatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bodyContatos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #83B4B8;
+    border-radius: 25px;
+    padding: 40px 30px;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.bodyContatos h1{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.botao-contatos{
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.botao-contatos:hover{
+    border: 1px solid black;
+}
+
+.inputComentario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputComentario label{
+    font-size: 20px;
+}
+
+.inputComentario textarea{
+    width: 500px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    resize: vertical;
+}
