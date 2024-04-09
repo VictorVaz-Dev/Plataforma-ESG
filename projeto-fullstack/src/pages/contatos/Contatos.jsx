@@ -7,10 +7,11 @@ export default function Contatos(){
             <div className="bodyContatos">
                 <h1>Preencha seus dados para entrarmos em contato!</h1>
                 <InputForms label="Nome" type="text" placeholder="Digite seu nome" id="nome"/>
-                <InputForms label="Sobrenome" type="text" placeholder="Digite seu sobrenome" id="sobrenome" />
-                <InputForms label="E-mail" type="text" placeholder="Digite seu e-mail para contato" id="contato" />
-                <InputForms label="Número" type="text" placeholder="Digite número para contato" id="numero"/>
-                <InputForms label="Localidade" type="text" placeholder="Digite a sua localidade" id="comentario"/>
+                <InputForms label="E-mail" type="text" placeholder="Digite seu e-mail" id="email"/>
+                <InputForms label="CEP" type="text" placeholder="Digite seu CEP" id="CEP"/>
+                <InputForms label="Rua" type="text" placeholder="Digite sua Rua" id="Rua"/>
+                <InputForms label="Bairro" type="text" placeholder="Digite seu Bairro" id="Bairro"/>
+                <InputForms label="Cidade" type="text" placeholder="Digite sua cidade" id="Cidade"/>
                 <div className="inputComentario">
                     <label>Comentário</label>
                     <textarea name="Comentario" placeholder="Deixe sua dúvida aqui" cols="30" rows="5"></textarea>
