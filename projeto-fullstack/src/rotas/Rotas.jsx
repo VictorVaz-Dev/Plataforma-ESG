@@ -9,9 +9,9 @@ export default function Rotas(){
     return(
         <div>
             <Routes>
-                <Route path="/Login" element={<Login/>} />
+                <Route path="/" element={<Login/>} />
                 <Route path="/Cadastro" element={<Cadastro/>} />
-                <Route path="/" element={<Home/>}/>
+                <Route path="/Home" element={<Home/>}/>
                 <Route path="/Contatos" element={<Contatos/>}/>
                 <Route path="/Bonificacoes" element={<Bonificacoes/>}/>
             </Routes>

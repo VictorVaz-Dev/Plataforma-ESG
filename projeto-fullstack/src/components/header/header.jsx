@@ -7,7 +7,7 @@ export default function Header(){
         <header>
             <div className="Header-principal">
                 <div className="Header-option">
-                    <Link to="/" label="Home"></Link>
+                    <Link to="/Home" label="Home"></Link>
                 </div>
                 <div className="Header-option">
                     <Link to="/Contatos" label="Contatos"></Link>

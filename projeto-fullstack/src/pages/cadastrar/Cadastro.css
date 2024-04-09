@@ -40,3 +40,25 @@
     color: white;
     border: 1px solid black;
 }
+
+.confirmar-senha{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.confirmar-senha label{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -340px;
+}
+
+.confirmar-senha input{
+    width: 500px;
+    height: 20px;
+    border-radius: 25px;
+    border: none;
+    padding: 4px 10px;
+}

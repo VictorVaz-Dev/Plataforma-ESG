@@ -9,8 +9,12 @@ export default function Cadastro(){
             <div className="titulo-cadastro">
                 <h2>Faça seu cadastro para aproveitar nosso site !</h2>
             </div>
-            <InputForms label="Usuário" type="text" placeholder="Digite seu Usuário" id="User"/>
-            <InputForms label="Senha" type="text" placeholder="Digite sua senha" id="Senha"/>
+            <InputForms label="Usuário" type="text" placeholder="Digite um nome de Usuário" id="User"/>
+            <InputForms label="Senha" type="text" placeholder="Digite uma senha" id="Senha"/>
+            <div className="confirmar-senha">
+                <label>Confirme sua senha</label>
+                <input type="text" placeholder="Confirme sua senha"/>
+            </div>
             <div className="div-botao-cadastro">
                 <button onClick="enviarForms" className="botao-cadastro">Cadastrar</button>
             </div>

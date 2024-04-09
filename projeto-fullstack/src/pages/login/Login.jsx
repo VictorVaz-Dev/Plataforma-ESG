@@ -16,7 +16,7 @@ export default function Login(){
                 </div>
                 <div className="div-cadastro">
                     <p>Não possui um cadastro ?</p>
-                    <Link to="/Cadastrar" label="Acesse aqui"/>
+                    <Link to="/Cadastro" label="Acesse aqui"/>
                 </div>
             </div>
         </div>
