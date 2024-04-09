@@ -1,0 +1,42 @@
+.div-cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.titulo-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.cadastro{
+    background-color: #83B4B8;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+.div-botao-cadastro{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-cadastro{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.botao-cadastro:hover{
+    background-color: #83B4B8;
+    color: white;
+    border: 1px solid black;
+}

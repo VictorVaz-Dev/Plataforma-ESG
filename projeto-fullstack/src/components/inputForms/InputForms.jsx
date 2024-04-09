@@ -7,7 +7,7 @@ const inputForms = (props) =>{
     return(
         <div className="inputForms">
             <label>{label}</label>
-            <input type={type} placeholder={placeholder} rows={row} id={id} ></input>
+            <input type={type} placeholder={placeholder} rows={row} id={id}></input>
         </div>
     )
 }
