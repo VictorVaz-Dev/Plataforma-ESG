@@ -1,7 +1,7 @@
 import "./InputForms.css"
 import React from "react"
 
-const inputForms = (props) =>{
+const InputForms = (props) =>{
     const {type, label, placeholder, row, id, value} = props;
 
     return(
@@ -12,4 +12,4 @@ const inputForms = (props) =>{
     )
 }
 
-export default inputForms
+export default InputForms
