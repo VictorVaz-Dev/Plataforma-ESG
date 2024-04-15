@@ -2,7 +2,7 @@ import "./InputForms.css"
 import React from "react"
 
 const InputForms = (props) =>{
-    const {type, label, placeholder, row, id, value, onChange, onInput} = props;
+    const {type, label, placeholder, id, value, onChange, onInput} = props;
 
     return(
         <div className="inputForms">
