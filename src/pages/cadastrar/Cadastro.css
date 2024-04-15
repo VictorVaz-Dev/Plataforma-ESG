@@ -22,7 +22,8 @@
 .div-botao-cadastro{
     margin-top: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 180px;
     align-items: center;
 }
 

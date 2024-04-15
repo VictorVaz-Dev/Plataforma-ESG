@@ -1,22 +1,53 @@
 import "./Cadastro.css"
+import Link from "../../components/link/Link";
 import InputForms from "../../components/inputForms/InputForms"
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from "../../services/FirebaseConfig";
+import { useState } from "react";
 
 
 export default function Cadastro(){
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [
+      createUserWithEmailAndPassword,
+      user,
+      loading,
+      error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+  
+    function Cadastrar(e){
+        e.preventDefault();
+        createUserWithEmailAndPassword(email, password);
+    }
+
+    if (error) {
+        <div>
+            <p>Error: {error.message}</p>
+        </div>
+    }
+
+    if(loading){
+        return <p>Carregando...</p>
+    }
+
+    if (user) {
+        alert("Cliente cadastrado ! você será redirecionado para a página de Login");
+        location.assign("/");
+        return;
+    }
+
     return(
         <div className="div-cadastrar">
         <div className="cadastro">
             <div className="titulo-cadastro">
                 <h2>Faça seu cadastro para aproveitar nosso site !</h2>
             </div>
-            <InputForms label="Usuário" type="text" placeholder="Digite um nome de Usuário" id="User"/>
-            <InputForms label="Senha" type="text" placeholder="Digite uma senha" id="Senha"/>
-            <div className="confirmar-senha">
-                <label>Confirme sua senha</label>
-                <input type="text" placeholder="Confirme sua senha"/>
-            </div>
+            <InputForms label="Usuário" type="text" placeholder="Digite um nome de Usuário" id="user" onChange={(e) => setEmail(e.target.value)}/>
+            <InputForms label="Senha" type="text" placeholder="Digite uma senha" id="Senha" onChange={(e) => setPassword(e.target.value)}/>
             <div className="div-botao-cadastro">
-                <button onClick="enviarForms" className="botao-cadastro">Cadastrar</button>
+                <Link to="/" label="Voltar"></Link>
+                <button onClick={Cadastrar} className="botao-cadastro">Cadastrar</button>
             </div>
         </div>
     </div>
