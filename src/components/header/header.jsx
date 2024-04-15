@@ -16,14 +16,14 @@ export default function Header() {
     <>
       {showHeader && (
         <header>
-          <div className="Header-principal">
-            <div className="Header-option">
+          <div className="header-principal">
+            <div className="header-option">
               <Link to="/Home" label="Home"></Link>
             </div>
-            <div className="Header-option">
+            <div className="header-option">
               <Link to="/Contatos" label="Contatos"></Link>
             </div>
-            <div className="Header-option">
+            <div className="header-option">
                 <button onClick={Sair} className="botaoSair">Sair</button>
             </div>
           </div>
