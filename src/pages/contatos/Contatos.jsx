@@ -77,7 +77,7 @@ const Contatos = () => {
                       {
                           'Nome': Nome,
                           'Email': Email,
-                          'CEP': cep,
+                          'CEP': cep.startsWith(0) ? `'${cep}` : cep,
                           'Rua': Rua,
                           'Bairro': Bairro,
                           'Cidade': Cidade,
