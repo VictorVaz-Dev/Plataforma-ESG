@@ -8,10 +8,10 @@ export default function Rotas(){
     return(
         <div>
             <Routes>
-                <Route path="/" element={<Login/>} />
-                <Route path="/Cadastro" element={<Cadastro/>} />
-                <Route path="/Home" element={<Home/>}/>
-                <Route path="/Contatos" element={<Contatos/>}/>
+                <Route path="https://github.com/VictorVaz-Dev/Atividade-Fullstack-Fiap/blob/main/src/pages/login/Login.jsx" element={<Login/>} />
+                <Route path="https://github.com/VictorVaz-Dev/Atividade-Fullstack-Fiap/blob/main/src/pages/cadastrar/Cadastro.jsx" element={<Cadastro/>} />
+                <Route path="https://github.com/VictorVaz-Dev/Atividade-Fullstack-Fiap/blob/main/src/pages/home/Home.jsx" element={<Home/>}/>
+                <Route path="https://github.com/VictorVaz-Dev/Atividade-Fullstack-Fiap/blob/main/src/pages/contatos/Contatos.jsx" element={<Contatos/>}/>
             </Routes>
         </div>
     )
