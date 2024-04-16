@@ -8,10 +8,10 @@ export default function Rotas(){
     return(
         <div>
             <Routes>
-                <Route path="https://victorvaz-dev.github.io/" element={<Login/>} />
-                <Route path="https://victorvaz-dev.github.io/Cadastro" element={<Cadastro/>} />
-                <Route path="https://victorvaz-dev.github.io/Home" element={<Home/>}/>
-                <Route path="https://victorvaz-dev.github.io/Contatos" element={<Contatos/>}/>
+                <Route path="/" element={<Login/>} />
+                <Route path="/Cadastro" element={<Cadastro/>} />
+                <Route path="/Home" element={<Home/>}/>
+                <Route path="/Contatos" element={<Contatos/>}/>
             </Routes>
         </div>
     )
