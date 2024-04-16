@@ -43,7 +43,7 @@ export default function Cadastro(){
             <div className="titulo-cadastro">
                 <h2>Faça seu cadastro para aproveitar nosso site !</h2>
             </div>
-            <InputForms label="Usuário" type="text" placeholder="Digite um nome de Usuário" id="user" onChange={(e) => setEmail(e.target.value)}/>
+            <InputForms label="E-mail" type="text" placeholder="exemplo@exemplo.com" id="user" onChange={(e) => setEmail(e.target.value)}/>
             <InputForms label="Senha" type="text" placeholder="Digite uma senha" id="Senha" onChange={(e) => setPassword(e.target.value)}/>
             <div className="div-botao-cadastro">
                 <Link to="/" label="Voltar"></Link>

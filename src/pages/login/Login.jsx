@@ -45,7 +45,7 @@ export default function Login(){
                 <div className="titulo-login">
                     <h2>Entre para conhecer nosso site !</h2>
                 </div>
-                <InputForms label="Usuário" type="text" placeholder="Digite seu E-mail" onChange={(e) => setEmail(e.target.value)}/>
+                <InputForms label="E-mail" type="text" placeholder="exemplo@exemplo.com" onChange={(e) => setEmail(e.target.value)}/>
                 <InputForms label="Senha" type="text" placeholder="Digite sua senha" onChange={(e) => setPassword(e.target.value)}/>
                 <div className="div-botao-login">
                     <button onClick={Logar} className="botao-login">Entrar</button>
