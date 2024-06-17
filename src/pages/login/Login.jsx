@@ -34,6 +34,8 @@ export default function Login(){
 
     if (user) {
         alert("Cliente Logado! Seja bem vindo " + email);
+        // Salvar o email no localStorage
+        localStorage.setItem('userEmail', email);
         location.assign("/Home");
         return;
     }
