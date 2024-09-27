@@ -167,7 +167,7 @@ export default function Cliente() {
                             onChange={(e) => setAddress(e.target.value)}
                         />
                     </div><br/>
-                    <button type="button" onClick={handleSave}>
+                    <button className="button-coment" type="button" onClick={handleSave}>
                         Salvar Dados
                     </button>
                 </form>
@@ -186,7 +186,7 @@ export default function Cliente() {
                             onChange={(e) => setNewComplaint(e.target.value)}
                         />
                     </div>
-                    <button type="button" onClick={handleAddComplaint}>
+                    <button className="button-coment" type="button" onClick={handleAddComplaint}>
                         Enviar Reclamação
                     </button>
                 </form><br/>
@@ -196,14 +196,15 @@ export default function Cliente() {
                         <p>Você não tem reclamações registradas.</p>
                     ) : (
                         complaints.map((complaint, index) => (
-                            <li key={index}>
-                                <p>{complaint}</p>
+                            <li className="listaComent" key={index}>
+                                <p className="paragrafoComent">{complaint}</p>
                                 <button
+                                    className="button-coment"
                                     type="button"
                                     onClick={() => handleRemoveComplaint(complaint)}
                                 >
                                     Apagar Reclamação
-                                </button>
+                                </button><br />
                             </li>
                         ))
                     )}
