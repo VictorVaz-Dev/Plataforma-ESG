@@ -1,38 +1,91 @@
-.header-principal{
-    display: flex;
+/* Header Principal */
+.header-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #83b4b8;
+  box-shadow: 1px 1px 1px 1px silver;
+  height: 50px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  color: white;
+  font-size: 20px;
+}
+
+/* Menu toggle (hamburguer) */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  font-size: 24px;
+  color: white;
+}
+
+/* Navegação Principal */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-option {
+  margin: 0 10px;
+}
+
+.header-option a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Botão de sair */
+.botaoSair {
+  background-color: #83b4b8;
+  border: none;
+  font-size: 16px;
+  color: black;
+}
+
+.botaoSair:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos para mobile */
+@media (max-width: 600px) {
+  .header-principal {
     justify-content: space-between;
-    align-items: center;
-    background-color: #83B4B8;
-    box-shadow: 1px 1px 1px 1px silver;
-    height: 50px;
-    padding: 10px 200px;
+    padding: 10px;
+  }
+
+  /* Ocultar a navegação por padrão no mobile */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #83b4b8;
+    z-index: 1000;
+  }
+
+  /* Mostrar menu quando estiver aberto */
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .header-option {
+    margin: 10px 0;
+  }
+
+  /* Mostrar o ícone do menu hamburguer no mobile */
+  .menu-toggle {
+    display: block;
+  }
 }
-
-.header-option a{
-    color: white;
-}
-
-.botaoSair{
-    background-color: #83B4B8;
-    border: none;
-    font-size: 16px;
-    color: black;
-}
-
-.botaoSair:hover{
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width:600px){
-    .header-principal{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
-
-
