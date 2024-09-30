@@ -19,23 +19,13 @@ export default function Suporte() {
             open: false,
         },
         {
-            question: "Esqueci minha senha. Como posso redefini-la?",
-            answer: "Na tela de login, clique em 'Esqueceu sua senha?' e siga as instruções para receber um email com um link para redefinir sua senha.",
-            open: false,
-        },
-        {
-            question: "Como faço para acessar as notificações do condomínio?",
-            answer: "Você pode visualizar as notificações do condomínio na tela inicial do aplicativo ou na área de 'Configurações', onde você também pode ativar ou desativar as notificações.",
-            open: false,
-        },
-        {
             question: "Posso alterar meu método de login?",
-            answer: "Atualmente, oferecemos login via email e senha, além de login social com Google e Facebook. Para mudar seu método de login, você pode fazer isso nas configurações de conta.",
+            answer: "Atualmente, oferecemos login via email e senha, futuramente teremos outro métodos de login social com Google e Facebook. Para mudar seu método de login, você pode fazer isso nas configurações de conta.",
             open: false,
         },
         {
             question: "O que faço se encontrar um problema no sistema?",
-            answer: "Se você encontrar algum problema técnico, entre em contato com o suporte pelo chat disponível na área de suporte ou envie um email para nosso suporte técnico.",
+            answer: "Se você encontrar algum problema técnico, entre em contato com o suporte pelo chat enviando um email para nosso suporte técnico (suporte-condominio@condominio.com).",
             open: false,
         }
     ]);
