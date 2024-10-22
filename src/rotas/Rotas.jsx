@@ -6,6 +6,7 @@ import Cadastro from "../pages/cadastrar/Cadastro"
 import Cliente from "../pages/cliente/Cliente"
 import Suporte from "../pages/faq/Suporte"
 import Condominio from "../pages/condominio/Condominio"
+import Chatbot from "../pages/chatbot/Chat"
 
 export default function Rotas(){
     return(
@@ -18,6 +19,7 @@ export default function Rotas(){
                 <Route path="/Clientes" element={<Cliente/>}/>
                 <Route path="/Suporte" element={<Suporte/>}/>
                 <Route path="/Condominio" element={<Condominio/>}/>
+                <Route path="/Chat" element={<Chatbot/>}/>
             </Routes>
         </div>
     )

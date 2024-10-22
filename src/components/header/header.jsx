@@ -45,6 +45,9 @@ export default function Header() {
                 <Link to="/Condominio" label="Condominio"></Link>
               </div>
               <div className="header-option">
+                <Link to="/Chat" label="Chat"></Link>
+              </div>
+              <div className="header-option">
                 <button onClick={Sair} className="botaoSair">
                   Sair
                 </button>
