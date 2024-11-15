@@ -1,46 +1,49 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const Chatbot = () => {
-  const [message, setMessage] = useState('');  // Armazena a mensagem atual
-  const [chat, setChat] = useState([]);  // Armazena as conversas (mensagens do usuário e bot)
-  const [loading, setLoading] = useState(false);  // Para mostrar que o bot está processando
+  const [message, setMessage] = useState(''); // Armazena a mensagem atual
+  const [chat, setChat] = useState([]); // Armazena as conversas (mensagens do usuário e bot)
+  const [loading, setLoading] = useState(false); // Para mostrar que o bot está processando
 
   // Função para enviar mensagem ao chatbot
-  const [isLoading, setIsLoading] = useState(false);
+  const sendMessage = () => {
+    if (message.trim() === '') return;
 
-const sendMessage = async () => {
-  if (message.trim() === '' || isLoading) return;
+    const userMessage = { text: message, sender: 'user' };
+    setChat((prevChat) => [...prevChat, userMessage]);
+    setLoading(true);
 
-  setIsLoading(true);  // Desativa o botão durante o processamento
-  const userMessage = { text: message, sender: 'user' };
-  setChat([...chat, userMessage]);
+    // Respostas pré-programadas
+    const botResponse = getBotResponse(message);
+    const botMessage = { text: botResponse, sender: 'bot' };
 
-  try {
-    const response = await axios.post(
-      'https://api.openai.com/v1/chat/completions',
-      {
-        model: 'gpt-3.5-turbo',
-        messages: [{ role: 'user', content: message }],
-      },
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer sk-kTo3lEhvFuFuJvhn-trCrjZERFzL6n0tsPJB54rcC1T3BlbkFJcZI4iTKYh4tIJm6zbayDH_nI8FsV91ah7IaB8NiYIA',
-        },
-      }
-    );
+    setTimeout(() => {
+      setChat((prevChat) => [...prevChat, botMessage]);
+      setLoading(false);
+    }, 500); // Tempo simulado para resposta do bot
 
-    const botMessage = { text: response.data.choices[0].message.content, sender: 'bot' };
-    setChat([...chat, userMessage, botMessage]);
+    setMessage('');
+  };
 
-  } catch (error) {
-    console.error('Erro ao enviar mensagem:', error);
-  }
+  // Função para obter a resposta do bot baseada na mensagem do usuário
+  const getBotResponse = (userMessage) => {
+    const lowerCaseMessage = userMessage.toLowerCase();
 
-  setIsLoading(false);  // Reativa o botão após o processamento
-  setMessage('');
-};
+    if (lowerCaseMessage.includes('olá') || lowerCaseMessage.includes('oi')) {
+      return 'Olá! Como posso ajudar você hoje?';
+    }
+    if (lowerCaseMessage.includes('como você está')) {
+      return 'Estou aqui para ajudar! Como posso assisti-lo?';
+    }
+    if (lowerCaseMessage.includes('ajuda')) {
+      return 'Claro! Me diga com o que você precisa de ajuda.';
+    }
+    if (lowerCaseMessage.includes('obrigado')) {
+      return 'De nada! Se precisar de mais alguma coisa, estou aqui.';
+    }
+    // Resposta padrão
+    return 'Desculpe, não entendi. Pode reformular sua pergunta?';
+  };
 
   return (
     <div style={styles.container}>
@@ -61,9 +64,9 @@ const sendMessage = async () => {
         type="text"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        onKeyPress={(e) => (e.key === 'Enter' ? sendMessage() : null)}  // Envia a mensagem ao pressionar Enter
+        onKeyPress={(e) => (e.key === 'Enter' ? sendMessage() : null)} // Envia a mensagem ao pressionar Enter
       />
-      <button style={styles.button} onClick={sendMessage}>Send</button>
+      <button style={styles.button} onClick={sendMessage}>Enviar</button>
     </div>
   );
 };
