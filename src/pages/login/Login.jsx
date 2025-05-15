@@ -4,6 +4,7 @@ import Link from "../../components/link/Link"
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useState } from "react";
 import { auth } from "../../services/FirebaseConfig";
+import Lightning from '../../components/lightning/lightning';
 
 
 export default function Login(){
@@ -42,7 +43,17 @@ export default function Login(){
 
 
     return(
+        <div className="light">
+        <Lightning 
+        
+            hue={260}
+            xOffset={0}
+            speed={1}
+            intensity={1}
+            size={1}
+        />
         <div className="div-login">
+            
             <div className="login">
                 <div className="titulo-login">
                     <h2>Entre para conhecer nosso site !</h2>
@@ -57,6 +68,7 @@ export default function Login(){
                     <Link to="/Cadastro" label="Acesse aqui"/>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
