@@ -23,6 +23,8 @@ Projeto de uma **plataforma web com foco em ESG (Environmental, Social and Gover
    npm run dev
 
 🧰 Tecnologias utilizadas
+
+
 ⚛️ React + Vite
 
 🎨 Tailwind CSS
