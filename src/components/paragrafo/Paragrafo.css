@@ -1,3 +1,11 @@
 .paragrafo{
     margin: 10px 0px;
 }
+
+.paragrafo h3{
+    color: white;
+}
+
+.paragrafo p{
+    color: white;
+}

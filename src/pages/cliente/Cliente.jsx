@@ -106,17 +106,20 @@ export default function Cliente() {
     };
 
     if (isLoading) {
-        return <div>Carregando...</div>;
+        return <div className="carregamento">Carregando...</div>;
     }
 
     return (
         <div className="customer-area">
             <header>
                 <h1>Área do Cliente</h1>
+                <p><b><i>Clica no botão "salvar dados" para não precisar preencher os dados novamente!</i></b></p>
+                <br/>
             </header>
             <div className="user-info">
                 <h2>Bem-vindo, {email}</h2>
-                <p>Email: {email}</p>
+                <br/>
+                <p>Email cadastrado: {email}</p>
             </div>
 
             <div className="customer-data">

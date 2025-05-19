@@ -6,6 +6,7 @@
 }
 
 .inputForms label{
+    color: white;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -16,8 +17,12 @@
     width: 500px;
     height: 20px;
     border-radius: 25px;
-    border: none;
     padding: 4px 10px;
+    border: none;
+}
+
+.inputForms ::placeholder{
+    color: black;
 }
 
 @media (max-width:800px){

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #242626;
 }
 
 .bodyContatos{
@@ -11,7 +11,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #83B4B8;
+    background-color: #8a11fb;
+    color: black;
     border-radius: 25px;
     padding: 40px 30px;
     width: 600px;
@@ -21,12 +22,13 @@
 .bodyContatos h1{
     font-size: 24px;
     margin-bottom: 30px;
+    color: white;
 }
 
 .botao-contatos{
     margin-top: 30px;
     background-color: white;
-    color: black;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -35,6 +37,8 @@
 
 .botao-contatos:hover{
     border: 1px solid black;
+    background-color: #8a11fb;
+    color: white;
 }
 
 .inputComentario{
@@ -49,6 +53,9 @@
     margin-left: -400px;
     margin-bottom: 10px;
     font-size: 20px;
+    color: black;
+    border: none;
+    color: white;
 }
 
 .inputComentario textarea{
@@ -56,7 +63,6 @@
     border-radius: 25px;
     padding: 10px 15px;
     resize: vertical;
-    border: none;
 }
 
 

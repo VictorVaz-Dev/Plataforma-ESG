@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #353333;
 }
 
 .foto-fullstack-home{
@@ -20,13 +21,15 @@
     align-items: center;
     flex-direction: column;
     margin: 20px 0px;
+    color: white;
 }
 
 .div-principal-home{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 1px 2px 2px silver;
+    box-shadow: 0px 1px 2px silver;
+    background-color: #242626;
     border-radius: 25px;
     width: 80%;
     padding: 10px;
@@ -45,7 +48,7 @@
     padding: 20px 50px;
     margin: 10px 0px;
     border-radius: 25px;
-    background-color: #83B4B8;
+    background-color: #8a11fb;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +66,7 @@
 }
 
 .botao-home a{
-    background-color: #83B4B8;
+    background-color: white;
     color: black;
     padding: 10px 20px;
     height: 20px;
@@ -74,9 +77,8 @@
 }
 
 .botao-home a:hover{
-    background-color: white;
+    background-color: #8a11fb;
     color: black;
-    border: 1px solid #83B4B8;
 }
 
 @media (max-width:900px){
