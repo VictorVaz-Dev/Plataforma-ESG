@@ -27,9 +27,7 @@ Projeto de uma **plataforma web com foco em ESG (Environmental, Social and Gover
 
 ⚛️ React + Vite
 
-🎨 Tailwind CSS
-
-📦 TypeScript
+📦 JavaScript
 
 📁 Firebase / Firestore (se estiver integrado)
 
