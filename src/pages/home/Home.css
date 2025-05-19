@@ -88,6 +88,10 @@
         align-items: center;
         flex-direction: column;
     }
+
+    .foto-fullstack-home{
+        display: none;
+    }
 }
 
 @media (max-width:730px){
