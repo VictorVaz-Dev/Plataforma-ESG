@@ -22,7 +22,7 @@ Projeto de uma **plataforma web com foco em ESG (Environmental, Social and Gover
    ```bash
    npm run dev
 
-   🧰 Tecnologias utilizadas
+🧰 Tecnologias utilizadas
 ⚛️ React + Vite
 
 🎨 Tailwind CSS
